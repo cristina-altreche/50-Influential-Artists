@@ -1,0 +1,81 @@
+#title {
+  .displayFlex(center, center);
+  width: 100%;
+
+  .bc-img {
+    background: url(/assets/home.png) center center/ cover;
+    height: 90vh;
+    width: 100%;
+    max-width: 1200px;
+    position: relative;
+    .displayFlex(center, center);
+    flex-direction: column;
+    margin-bottom: 50px;
+
+    .title-wrapper {
+      text-align: center;
+      padding: 40px;
+      height: auto;
+
+      h1 {
+        font-size: 6rem;
+        color: @white;
+      }
+
+      button {
+        .btn-style(1em 2em, 1.5rem, 2px solid black);
+      }
+    }
+  }
+}
+
+#artists {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  width: 100%;
+
+  .artists-container {
+    .displayFlex(center, center);
+    flex-direction: row;
+    max-width: 1200px;
+
+    @media @mobile {
+      flex-direction: column;
+    }
+
+    .artist {
+      width: 45%;
+      height: auto;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      @media @mobile {
+        width: 100%;
+      }
+
+      .img {
+        width: 100%;
+        object-fit: cover;
+
+        img {
+          border-radius: 2%;
+        }
+      }
+
+      a {
+        font-size: 2rem;
+        padding: 15px;
+      }
+
+      .bio {
+        font-size: 1.2rem;
+        text-align: center;
+        color: @deepBlue;
+      }
+    }
+  }
+}
