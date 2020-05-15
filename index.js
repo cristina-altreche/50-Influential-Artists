@@ -292,9 +292,22 @@ genre: Web Design,
 nationality: Your Nationality Here
 bio: Add 1-2 sentences (or use lorem ipsum) "*/
 
-function addArtist(/* Code here */) {
-  /* Code here */
+function addArtist(arr, info) {
+  return arr.push(info);
 }
+
+console.log(
+  addArtist(artists, {
+    id: 20,
+    name: "Cristina",
+    years: "86 - 10",
+    genre: "Web Design",
+    nationality: "Hispanic",
+    bio:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. ",
+  })
+);
+console.log(artists);
 
 // 🎨🎨 STRETCH 🎨🎨//
 
