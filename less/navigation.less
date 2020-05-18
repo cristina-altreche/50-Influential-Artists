@@ -1,0 +1,29 @@
+header {
+  width: 100%;
+  height: auto;
+  .displayFlex(center, center);
+
+  nav {
+    max-width: 1200px;
+    padding: 40px;
+    color: @nav-color;
+
+    a {
+      padding: 0 15px;
+      font-size: 2rem;
+      color: @nav-color;
+    }
+
+    .line-right {
+      border-right: 2px solid @gray;
+    }
+
+    .line-left {
+      border-left: 2px solid @gray;
+    }
+
+    .active {
+      color: rgb(41, 40, 40);
+    }
+  }
+}

@@ -1,4 +1,131 @@
-/* Font in design files is Raleway */
-
-/* background-image in Design 👇
- url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/John_Martin_-_The_Plains_of_Heaven_-_Google_Art_Project.jpg/1920px-John_Martin_-_The_Plains_of_Heaven_-_Google_Art_Project.jpg'); */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: "Roboto", sans-serif;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+.page-link {
+  cursor: pointer;
+}
+header {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header nav {
+  max-width: 1200px;
+  padding: 40px;
+  color: #626161;
+}
+header nav a {
+  padding: 0 15px;
+  font-size: 2rem;
+  color: #626161;
+}
+header nav .line-right {
+  border-right: 2px solid #626161;
+}
+header nav .line-left {
+  border-left: 2px solid #626161;
+}
+header nav .active {
+  color: #292828;
+}
+#title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+#title .bc-img {
+  background: url(/assets/home.png) center center / cover;
+  height: 90vh;
+  width: 100%;
+  max-width: 1200px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+#title .bc-img .title-wrapper {
+  text-align: center;
+  padding: 40px;
+  height: auto;
+}
+#title .bc-img .title-wrapper h1 {
+  font-size: 6rem;
+  color: #ffffff;
+}
+#title .bc-img .title-wrapper button {
+  outline: none;
+  border: 2px solid black;
+  border-radius: 2px;
+  padding: 1em 2em;
+  color: #ffffff;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+#artists {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  width: 100%;
+}
+#artists .artists-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  max-width: 1200px;
+}
+@media (max-width: 500px) {
+  #artists .artists-container {
+    flex-direction: column;
+  }
+}
+#artists .artists-container .artist {
+  width: 45%;
+  height: auto;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+@media (max-width: 500px) {
+  #artists .artists-container .artist {
+    width: 100%;
+  }
+}
+#artists .artists-container .artist .img {
+  width: 100%;
+  object-fit: cover;
+}
+#artists .artists-container .artist .img img {
+  border-radius: 2%;
+}
+#artists .artists-container .artist a {
+  font-size: 2rem;
+  padding: 15px;
+}
+#artists .artists-container .artist .bio {
+  font-size: 1.2rem;
+  text-align: center;
+  color: #212529;
+}
